@@ -1,13 +1,18 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;500;600;700&display=swap');
 
 
+:root{
+    --content: 83, 83, 83;
+}
+
 *{
     padding: 0;
     margin: 0;
+    font-family: Inter;
 
 }
 body{
-  background: black;
+  background:rgb(18, 14, 38);
 }
 
 
@@ -129,3 +134,66 @@ img {
     color: rgb(0, 0, 0);
     font-family: "Inter",sans-serif;
 }
+
+
+@media only screen and (max-width: 900px) {
+    main{   
+ 
+        width: 100%;
+        height: 100vh;
+        background-image: url(),
+            url(),
+            linear-gradient(to right, rgba(30, 75, 115, 1), rgba(255, 255, 255, 0));
+        background-repeat: no-repeat,
+            no-repeat,
+            no-repeat;
+        background-position: bottom right,
+            left,
+            right;
+      }
+  }
+
+
+
+  .contact{
+    margin-left: 10%;
+    margin-right: 10%;
+  }
+
+  .cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 10px;
+    
+  }
+  .inner-card{
+    display: flex;
+  
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    padding: 10%;
+    border-radius: 2rem;
+    background-image: linear-gradient(to right, rgb(var(--content), 0), rgb(var(--content), .1));
+    
+    border: 2px solid rgb(30, 224, 224, .2);
+  }
+  .inner-card > img{
+    margin: 5px;
+    height: 10vh;
+    
+  }
+  .inner-card > h3{
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    color: #ffffff;
+    
+  }
+
+  .contact > h2{
+    text-align: center;
+    color: #ffffff;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+
+  }
